@@ -1,0 +1,73 @@
+UML outline:
+                    Automation Layer
+A) commonLips
+        a) Contracts - some sort description
+             i)   IAlert
+             ii)  ICommonElements
+             iii) IDriver
+             iv)  IDropdown
+             v)   IFrame
+             vi)  IJavascripExecutor
+             vii) IScreenshots 
+             viii)IWindowHandle
+             
+        b) Implementations- contracts is implements here. methods 
+             i) AlertControl -alert accept, dismiss, text
+             ii) CommonDriver - timeout,openBrowser,navigate,close
+             iii) DropdownControl - select by index, visible text
+             iv) CommonElement - get,set text, click element, display 
+             v) FrameControl- switch to frame by index, id, element
+             vi) JavascriptControl - scroll down
+             vii) ScreenshotControl - take screen shot
+             viii) WindowHandleControl - switch any window, child window
+               
+               Application Layer
+               
+ B) package - designPatteren  and demo
+             there are three design pattern example. 
+             Page factory is best 
+ C) package- com.mercuryTravel.pages and com.mercuryTravel.test
+ POM apache commons IO download mavenrepository
+ 
+ report- can view html on reports file..- its a betterlooking report
+ interactive reports, log and screen shot is made.
+ 
+ 
+            
+            
+            Add testNg file to tests and do different tests regression
+            sanity 
+ 
+ 
+ congig - create file - config.properties - keep hard coded value
+                        moving hard coded value from Basetest and homepage.test to config
+                        
+                        
+extend report.-- go to http://extentreports.com/docs/versions/3/java/
+   copy maven dependecy and paste on pom
+  - every test cases - need to create extent report
+  
+  html report - create report
+  html report - attach report, assighned
+  log - create test cases, log
+  
+  step -  initialize and attached or assigned to html file and extent to html report
+  
+   ............interactive report, logs , screenshot
+   poi apache for excel mavin repository- dependency
+   poi apache is open source library apachecy software to read and write excel files
+   poi--ooxml apachi
+   go to git bass
+   and type mvn clean install
+   go to ... clean test
+   
+   ..............excel-----
+   freate workbook,open create sheet, sav, close, read data from ceel and write
+   Stream - sequence of data . Input steam is used for read data from sourc
+   output steam used to write, byte steams used to perform input and output of 8 byte
+   character is upsed for input and out put for 16 bit unicode.
+   Filereader read 2 byete at a time. 
+   
+   created ecel sheet on commonLIps.utils - and deomoExcel on demo
+   
+   demoExcel to run excel file...
